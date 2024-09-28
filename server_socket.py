@@ -10,8 +10,12 @@ server_socket.bind(server_address)
 # Escuchar conexiones entrantes
 server_socket.listen(5)
 print(f"Servidor escuchando en {server_address}")
+
+# Instancia del arbol y lista de datos que se le enviarán al arbol
 arbol = ArbolBinario()
 data_list = []
+
+
 while len(data_list) < 30:
     # Esperar a que un cliente se conecte
     print("Esperando conexión de un cliente...")
